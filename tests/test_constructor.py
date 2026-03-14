@@ -41,3 +41,4 @@ class TestConstructor:
 
         # проверка, что элемент меню выбран и название соответствует
         assert 'current' in element_class and menu_title in element.text
+        

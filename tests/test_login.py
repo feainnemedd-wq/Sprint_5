@@ -91,3 +91,4 @@ class TestLogin:
 
         # проверка, что текущий адрес страницы - личный кабинет
         assert '/account' in current_url
+        

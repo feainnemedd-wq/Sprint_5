@@ -71,3 +71,4 @@ class TestRegistration:
 
         # проверка, что текущий адрес страницы - личный кабинет
         assert '/register' in current_url and error_msg == 'Некорректный пароль'
+        

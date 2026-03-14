@@ -31,3 +31,4 @@ class Locators:
     SAUCES_INGREDIENTS = By.XPATH, ".//span[text()='Соусы']/parent::div"  # пункт меню "Соусы"
     FILLINGS_INGREDIENTS = By.XPATH, ".//span[text()='Начинки']/parent::div"  # пункт меню "Начинки"
     SELECTED_INGREDIENTS = By.XPATH, ".//*[starts-with(@class, 'tab_tab') and contains(@class, 'current')]"  # выбранный пункт меню
+    

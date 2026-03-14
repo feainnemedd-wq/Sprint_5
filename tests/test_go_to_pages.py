@@ -75,3 +75,4 @@ class TestGoToPage:
 
         # Проверка текста заголовка
         assert title_element.text == 'Соберите бургер'
+        

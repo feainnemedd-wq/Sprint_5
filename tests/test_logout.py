@@ -54,3 +54,4 @@ class TestLogout:
 
         # проверка, что выполнился выход и кнопка "Войти" отображается
         assert driver.find_element(*Locators.LOGIN_BUTTON).is_displayed()
+        

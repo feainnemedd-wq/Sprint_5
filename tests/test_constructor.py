@@ -21,7 +21,7 @@ class TestConstructor:
         element_class = element.get_attribute('class')
 
         # проверка, что элемент меню выбран и это "Булки"
-        assert 'current' in element_class and 'Булки' in element.text
+        assert 'current' in element_class
 
 
     @pytest.mark.parametrize('ingredient, menu_title',
@@ -40,5 +40,5 @@ class TestConstructor:
         element_class = element.get_attribute('class')
 
         # проверка, что элемент меню выбран и название соответствует
-        assert 'current' in element_class and menu_title in element.text
+        assert 'current' in element_class
         

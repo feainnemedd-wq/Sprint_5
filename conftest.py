@@ -1,10 +1,12 @@
 import pytest
-from helpers import gen_password, gen_email, gen_name
+from selenium import webdriver
 
 @pytest.fixture(scope='function')
-def user_data():
-    return {
-        "name": gen_name(),
-        "email": gen_email(),
-        "password": gen_password()
-    }
+def driver():
+    # Запуск браузера
+    browser = webdriver.Chrome()
+    
+    yield browser
+    
+    # Завершение работы (закрытие браузера) после окончания теста
+    browser.quit()
